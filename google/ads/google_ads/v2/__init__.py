@@ -20,8 +20,8 @@ import sys
 from google.ads.google_ads import util
 
 
-if sys.version_info < (3, 7):
-    raise ImportError('This module requires Python 3.7 or later.')
+if sys.version_info < (3, 6):
+    raise ImportError('This module requires Python 3.6 or later.')
 
 
 _lazy_name_to_package_map = dict(
