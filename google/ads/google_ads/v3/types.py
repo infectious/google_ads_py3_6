@@ -23,6 +23,7 @@ from google.api_core.protobuf_helpers import get_messages
 
 from google.ads.google_ads import util
 
+PY37 = sys.version_info >= (3, 7)
 
 if sys.version_info < (3, 6):
     raise ImportError('This module requires Python 3.6 or later.')
@@ -1779,3 +1780,6 @@ def __getattr__(name):  # Requires Python >= 3.7
 
 def __dir__():
     return globals().get('__all__') or __getattr__('__all__')
+
+if not PY37:
+    Pep562(__name__)
