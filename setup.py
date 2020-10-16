@@ -50,7 +50,7 @@ setup(
     ],
     description="Client library for the Google Ads API",
     include_package_data=True,
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     long_description=long_description,
     install_requires=install_requires,
     tests_require=tests_require,
