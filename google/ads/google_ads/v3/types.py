@@ -1782,4 +1782,6 @@ def __dir__():
     return globals().get('__all__') or __getattr__('__all__')
 
 if not PY37:
+    from pep562 import Pep562
+
     Pep562(__name__)
